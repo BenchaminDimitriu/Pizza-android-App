@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -13,11 +14,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.material.snackbar.Snackbar;
+
 public class login extends AppCompatActivity {
 
     EditText userID, password;
     Button login, registration;
 
+    MediaPlayer player;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,17 +34,37 @@ public class login extends AppCompatActivity {
         login = findViewById(R.id.loginBtn);
         registration = findViewById(R.id.loginRegistrationBtn);
 
+        if(player==null){
+            player = MediaPlayer.create(this,R.raw.music);
+            player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mediaPlayer) {
+                    stopPlayer();
+                }
+            });
+        }
+        player.start();
+
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = getIntent();
                 String loginUserID = i.getStringExtra("User");
                 String loginPass = i.getStringExtra("Pass");
+                Snackbar snack = Snackbar.make(view, "Error in login!",
+                        Snackbar.LENGTH_INDEFINITE);
+
                 if(userID.getText().toString().equals(loginUserID) && password.getText().toString().equals(loginPass)){
                     Intent l = new Intent(login.this, menu.class);
                     l.putExtra("User", loginUserID);
                     startActivity(l);
-                }else Toast.makeText(getApplicationContext(), "Enter a valid UserID and Password", Toast.LENGTH_SHORT).show();
+                }else
+                snack.setAction("close", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        snack.dismiss();
+                    }
+                }).setActionTextColor(getResources().getColor(android.R.color.holo_orange_light)).show();
             }
         });
 
@@ -81,6 +105,18 @@ public class login extends AppCompatActivity {
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
+        }
+    }
+
+    public void stop(View view) {
+        stopPlayer();
+    }
+
+    private void stopPlayer() {
+        if(player != null){
+            player.release();
+            player = null;
+            Toast.makeText(this,"MediaPlayer source is released", Toast.LENGTH_SHORT).show();
         }
     }
 }

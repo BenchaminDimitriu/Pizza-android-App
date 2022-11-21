@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -15,10 +16,23 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    MediaPlayer player;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        if(player==null){
+            player = MediaPlayer.create(this,R.raw.music);
+            player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mediaPlayer) {
+                    stopPlayer();
+                }
+            });
+        }
+        player.start();
     }
 
 
@@ -53,4 +67,15 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void stop(View view) {
+        stopPlayer();
+    }
+
+    private void stopPlayer() {
+        if(player != null){
+            player.release();
+            player = null;
+            Toast.makeText(this,"MediaPlayer source is released", Toast.LENGTH_SHORT).show();
+        }
+    }
 }
