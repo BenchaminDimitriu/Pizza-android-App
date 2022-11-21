@@ -3,9 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Ea_Em/AndroidStudioProjects/Trimino/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/Ea_Em/AndroidStudioProjects/Trimino/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Ea_Em/AndroidStudioProjects/Trimino/app/src/main/res/layout/activity_menu.xml" value="0.25" />
         <entry key="..\:/Users/Ea_Em/AndroidStudioProjects/Trimino/app/src/main/res/layout/activity_registration.xml" value="0.25" />
+        <entry key="..\:/Users/Ea_Em/AndroidStudioProjects/Trimino/app/src/main/res/menu/main_menu.xml" value="0.24895833333333334" />
       </map>
     </option>
   </component>
