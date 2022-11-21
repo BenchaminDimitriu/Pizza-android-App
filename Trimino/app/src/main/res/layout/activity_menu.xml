@@ -4,38 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_red_light"
+    android:background="#E25A2D"
     tools:context=".menu">
 
     <TextView
         android:id="@+id/Menu"
         android:layout_width="157dp"
         android:layout_height="65dp"
-        android:fontFamily="serif-monospace"
+        android:fontFamily="serif"
         android:gravity="center"
-        android:text="Menu"
+        android:text="Pizzas"
         android:textColor="@android:color/black"
         android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.207" />
+        app:layout_constraintVertical_bias="0.163" />
 
     <TextView
         android:id="@+id/menuUser"
         android:layout_width="140dp"
         android:layout_height="35dp"
-        android:fontFamily="serif-monospace"
+        android:fontFamily="serif"
         android:gravity="center"
         android:text="Username"
-        android:textSize="25dp"
         android:textColor="@android:color/black"
+        android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.83"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.107" />
+        app:layout_constraintVertical_bias="0.066" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="407dp"
+        android:layout_height="536dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+    </androidx.gridlayout.widget.GridLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

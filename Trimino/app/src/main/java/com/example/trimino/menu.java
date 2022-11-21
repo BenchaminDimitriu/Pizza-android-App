@@ -28,49 +28,49 @@ public class menu extends AppCompatActivity {
 
         userMenu.setText(getIntent().getStringExtra("User"));
 
-        p1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = getIntent();
-                String menuUserID = i.getStringExtra("User");
-             //   Intent l = new Intent(menu.this, allDressed.class);
+//        p1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent i = getIntent();
+//                String menuUserID = i.getStringExtra("User");
+//                Intent l = new Intent(menu.this, allDressed.class);
 //                l.putExtra("User", menuUserID);
 //                startActivity(l);
-            }
-        });
-
-        p2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = getIntent();
-                String menuUserID = i.getStringExtra("User");
-               // Intent l = new Intent(menu.this, cheese.class);
+//            }
+//        });
+//
+//        p2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent i = getIntent();
+//                String menuUserID = i.getStringExtra("User");
+//                Intent l = new Intent(menu.this, cheese.class);
 //                l.putExtra("User", menuUserID);
 //                startActivity(l);
-            }
-        });
-
-        p3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = getIntent();
-                String menuUserID = i.getStringExtra("User");
-              //  Intent l = new Intent(menu.this, threeCheese.class);
+//            }
+//        });
+//
+//        p3.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent i = getIntent();
+//                String menuUserID = i.getStringExtra("User");
+//                Intent l = new Intent(menu.this, threeCheese.class);
 //                l.putExtra("User", menuUserID);
 //                startActivity(l);
-            }
-        });
-
-        p4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = getIntent();
-                String menuUserID = i.getStringExtra("User");
-              // Intent l = new Intent(menu.this, vegetable.class);
+//            }
+//        });
+//
+//        p4.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent i = getIntent();
+//                String menuUserID = i.getStringExtra("User");
+//               Intent l = new Intent(menu.this, vegetable.class);
 //                l.putExtra("User", menuUserID);
 //                startActivity(l);
-            }
-        });
+//            }
+//        });
 
     }
 }
