@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
             player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                 @Override
                 public void onCompletion(MediaPlayer mediaPlayer) {
-                    stopPlayer();
+                    player.start();
                 }
             });
         }
@@ -58,17 +58,17 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
         switch(item.getItemId()){
-            case R.id.item:
+            case R.id.home:
                 Toast.makeText(this, "Home is selected", Toast.LENGTH_SHORT).show();
                 Intent k = new Intent(MainActivity.this, MainActivity.class);
                 startActivity(k);
                 return true;
-            case R.id.item1:
+            case R.id.register:
                 Toast.makeText(this, "Registration is selected", Toast.LENGTH_SHORT).show();
                 Intent i = new Intent(MainActivity.this, registration.class);
                 startActivity(i);
                 return true;
-            case R.id.item2:
+            case R.id.login:
                 Toast.makeText(this, "Login is selected", Toast.LENGTH_SHORT).show();
                 Intent e = new Intent(MainActivity.this, login.class);
                 startActivity(e);

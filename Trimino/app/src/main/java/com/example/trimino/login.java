@@ -59,7 +59,7 @@ public class login extends AppCompatActivity {
         regisBtn = findViewById(R.id.loginRegistrationBtn);
 
         //mAuth = FirebaseAuth.getInstance();
-        
+
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -109,17 +109,17 @@ public class login extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
         switch(item.getItemId()){
-            case R.id.item:
+            case R.id.home:
                 Toast.makeText(this, "Home is selected", Toast.LENGTH_SHORT).show();
                 Intent k = new Intent(login.this, MainActivity.class);
                 startActivity(k);
                 return true;
-            case R.id.item1:
+            case R.id.register:
                 Toast.makeText(this, "Registration is selected", Toast.LENGTH_SHORT).show();
                 Intent i = new Intent(login.this, registration.class);
                 startActivity(i);
                 return true;
-            case R.id.item2:
+            case R.id.login:
                 Toast.makeText(this, "Login is selected", Toast.LENGTH_SHORT).show();
                 Intent e = new Intent(login.this, login.class);
                 startActivity(e);

@@ -7,17 +7,17 @@
         app:showAsAction="collapseActionView">
         <menu>
 
-            <item android:id="@+id/item"
+            <item android:id="@+id/home"
                 android:icon="@drawable/ic_baseline_home_24"
                 android:title="Home"
                 app:showAsAction="always"/>
 
-            <item android:id="@+id/item1"
+            <item android:id="@+id/register"
                 android:icon="@drawable/ic_baseline_person_add_24"
                 android:title="Register"
                 app:showAsAction="always"/>
 
-            <item android:id="@+id/item2"
+            <item android:id="@+id/login"
                 android:icon="@drawable/ic_baseline_person_24"
                 android:title="Login"
                 app:showAsAction="always"/>
