@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+//HOMEPAGE
 public class MainActivity extends AppCompatActivity {
 
     MediaPlayer player;

@@ -24,58 +24,58 @@ public class menu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-//        p1 = findViewById(R.id.pizzaOne);
-//        p2 = findViewById(R.id.pizzaTwo);
-//        p3 = findViewById(R.id.pizzaThree);
-//        p4 = findViewById(R.id.pizzaFour);
+        p1 = findViewById(R.id.hawaiianPizzaPic);
+        p2 = findViewById(R.id.pepperoniPizzaPic);
+        p3 = findViewById(R.id.mexicanPizzaPic);
+        p4 = findViewById(R.id.cheesePizzaPic);
 
         userMenu = findViewById(R.id.menuUser);
 
         userMenu.setText(getIntent().getStringExtra("User"));
 
-//        p1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent i = getIntent();
-//                String menuUserID = i.getStringExtra("User");
-//                Intent l = new Intent(menu.this, allDressed.class);
-//                l.putExtra("User", menuUserID);
-//                startActivity(l);
-//            }
-//        });
-//
-//        p2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent i = getIntent();
-//                String menuUserID = i.getStringExtra("User");
-//                Intent l = new Intent(menu.this, cheese.class);
-//                l.putExtra("User", menuUserID);
-//                startActivity(l);
-//            }
-//        });
-//
-//        p3.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent i = getIntent();
-//                String menuUserID = i.getStringExtra("User");
-//                Intent l = new Intent(menu.this, threeCheese.class);
-//                l.putExtra("User", menuUserID);
-//                startActivity(l);
-//            }
-//        });
-//
-//        p4.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent i = getIntent();
-//                String menuUserID = i.getStringExtra("User");
-//               Intent l = new Intent(menu.this, vegetable.class);
-//                l.putExtra("User", menuUserID);
-//                startActivity(l);
-//            }
-//        });
+        p1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = getIntent();
+                String menuUserID = i.getStringExtra("User");
+                Intent l = new Intent(menu.this, hawaiian.class);
+                l.putExtra("User", menuUserID);
+                startActivity(l);
+            }
+        });
+
+        p2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = getIntent();
+                String menuUserID = i.getStringExtra("User");
+                Intent l = new Intent(menu.this, pepperoni.class);
+                l.putExtra("User", menuUserID);
+                startActivity(l);
+            }
+        });
+
+        p3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = getIntent();
+                String menuUserID = i.getStringExtra("User");
+                Intent l = new Intent(menu.this, mexican.class);
+                l.putExtra("User", menuUserID);
+                startActivity(l);
+            }
+        });
+
+        p4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = getIntent();
+                String menuUserID = i.getStringExtra("User");
+               Intent l = new Intent(menu.this, cheese.class);
+                l.putExtra("User", menuUserID);
+                startActivity(l);
+            }
+        });
 
     }
 
