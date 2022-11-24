@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "57649100142",
+    "project_id": "trimino-8e317",
+    "storage_bucket": "trimino-8e317.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57649100142:android:2a132289cb0c10e7ef7d7f",
+        "android_client_info": {
+          "package_name": "com.example.trimino"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "57649100142-5q0adgp6rrqv02cjl6554ee6le078atf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdlEDWS5daM5HuDTPEPPq3GM1a_YdVL5k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "57649100142-5q0adgp6rrqv02cjl6554ee6le078atf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

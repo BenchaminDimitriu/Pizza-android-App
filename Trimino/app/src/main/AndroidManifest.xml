@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.trimino" >
+    package="com.example.trimino">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,7 +13,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Trimino"
-        tools:targetApi="31" >
+        tools:targetApi="31">
+        <activity
+            android:name=".profile"
+            android:exported="false" />
+        <activity
+            android:name=".contact"
+            android:exported="false" />
+        <activity
+            android:name=".location"
+            android:exported="false" />
+        <activity
+            android:name=".checkout"
+            android:exported="false" />
+        <activity
+            android:name=".cart"
+            android:exported="false" />
+        <activity
+            android:name=".order"
+            android:exported="false" />
+        <activity
+            android:name=".coupons"
+            android:exported="false" />
         <activity
             android:name=".login"
             android:exported="false" />
@@ -24,7 +46,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

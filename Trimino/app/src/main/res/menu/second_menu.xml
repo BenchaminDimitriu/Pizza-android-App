@@ -2,6 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <item android:id="@+id/item5"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Cart"
+        app:showAsAction="always"/>
+
     <item android:id="@+id/item0"
         android:title="Options"
         app:showAsAction="collapseActionView">
@@ -17,9 +22,14 @@
                 android:title="Profile"
                 app:showAsAction="always"/>
 
+            <item android:id="@+id/menu"
+                android:icon="@drawable/ic_baseline_person_add_24"
+                android:title="Menu"
+                app:showAsAction="always"/>
+
             <item android:id="@+id/item2"
                 android:icon="@drawable/ic_baseline_person_24"
-                android:title="Coupon"
+                android:title="Coupons"
                 app:showAsAction="always"/>
 
             <item android:id="@+id/item3"
@@ -32,8 +42,7 @@
                 android:title="Contact Us"
                 app:showAsAction="always"/>
 
-
-            <item android:id="@+id/item5"
+            <item android:id="@+id/item6"
                 android:icon="@drawable/ic_baseline_person_24"
                 android:title="Logout"
                 app:showAsAction="always"/>

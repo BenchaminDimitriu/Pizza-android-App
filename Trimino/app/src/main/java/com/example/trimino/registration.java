@@ -9,14 +9,28 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.Toast;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
 
 public class registration extends AppCompatActivity {
 
-    EditText regisUser, regisPass, regisCon;
+    EditText username, password, confirmPass;
     Button regisBtn;
+    DatabaseReference reff;
+    User user;
+    long maxID = 0;
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -30,24 +44,47 @@ public class registration extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
 
-        regisUser = findViewById(R.id.registrationUserID);
-        regisPass = findViewById(R.id.registrationPassword);
-        regisCon = findViewById(R.id.confirmPassword);
+        username = findViewById(R.id.registrationUserID);
+        password = findViewById(R.id.registrationPassword);
+        confirmPass = findViewById(R.id.confirmPassword);
 
         regisBtn = findViewById(R.id.registrationBtn);
+
+        user = new User();
+
+        reff = FirebaseDatabase.getInstance().getReference().child("User");
+        reff.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if(snapshot.exists()){
+                    maxID = (snapshot.getChildrenCount());
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
 
         regisBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String rUser = regisUser.getText().toString();
-                String rPass = regisPass.getText().toString();
-                String rCon = regisCon.getText().toString();
-                if(rPass.equals(rCon)){
-                    Intent i = new Intent(registration.this, login.class);
-                    i.putExtra("User", rUser);
-                    i.putExtra("Pass", rPass);
-                    startActivity(i);
-                }else Toast.makeText(registration.this, "Passwords do not match", Toast.LENGTH_SHORT).show();
+                if (!username.getText().toString().equals(" ") && !password.getText().toString().equals(" ") && !confirmPass.getText().toString().equals(" ")) {
+                    if (password.getText().toString().equals(confirmPass.getText().toString())) {
+                        user.setUsername(username.getText().toString());
+                        user.setPassword(password.getText().toString());
+                        user.setRole("user");
+                        reff.child(String.valueOf(maxID + 1)).setValue(user);
+                        Toast.makeText(getApplicationContext(), "User registered successfully", Toast.LENGTH_SHORT).show();
+                        Intent i = new Intent(getApplicationContext(), login.class);
+                        startActivity(i);
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Passwords do not match!", Toast.LENGTH_SHORT).show();
+                    }
+                } else {
+                    Toast.makeText(getApplicationContext(), "Fields cannot be empty!", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }

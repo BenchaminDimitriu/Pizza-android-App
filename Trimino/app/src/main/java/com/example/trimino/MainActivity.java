@@ -17,11 +17,22 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     MediaPlayer player;
+    Button btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        btn = findViewById(R.id.button);
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, coupons.class);
+                startActivity(i);
+            }
+        });
 
         if(player==null){
             player = MediaPlayer.create(this,R.raw.music);
