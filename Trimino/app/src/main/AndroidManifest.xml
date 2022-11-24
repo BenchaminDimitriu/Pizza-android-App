@@ -16,6 +16,18 @@
         android:theme="@style/Theme.Trimino"
         tools:targetApi="31">
         <activity
+            android:name=".hawaiian"
+            android:exported="false" />
+        <activity
+            android:name=".pepperoni"
+            android:exported="false" />
+        <activity
+            android:name=".mexican"
+            android:exported="false" />
+        <activity
+            android:name=".cheese"
+            android:exported="false" />
+        <activity
             android:name=".musicController"
             android:exported="false" />
         <activity

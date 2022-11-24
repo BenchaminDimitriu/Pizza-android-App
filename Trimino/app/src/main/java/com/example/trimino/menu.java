@@ -31,8 +31,6 @@ public class menu extends AppCompatActivity {
 
         userMenu = findViewById(R.id.menuUser);
 
-        userMenu.setText(getIntent().getStringExtra("User"));
-
         p1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -71,7 +69,7 @@ public class menu extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = getIntent();
                 String menuUserID = i.getStringExtra("User");
-               Intent l = new Intent(menu.this, cheese.class);
+                Intent l = new Intent(menu.this, cheese.class);
                 l.putExtra("User", menuUserID);
                 startActivity(l);
             }
