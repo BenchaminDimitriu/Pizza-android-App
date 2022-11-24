@@ -17,20 +17,20 @@
     android:hint="ID" />
 
 <EditText
-    android:id="@+id/nametxt"
+    android:id="@+id/usernametxt"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:ems="10"
-    android:hint="Name"
+    android:hint="username"
     android:inputType="textPersonName" />
 
 <EditText
-    android:id="@+id/cphonetxt"
+    android:id="@+id/oldtxt"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:ems="10"
     android:inputType="textPersonName"
-    android:hint="Contact Phone" />
+    android:hint="old password" />
 
     <EditText
     android:id="@+id/addresstxt"
@@ -38,17 +38,17 @@
     android:layout_height="wrap_content"
     android:ems="10"
     android:inputType="textPersonName"
-    android:hint="Address" />
+    android:hint="new password" />
 
-<Button
-    android:id="@+id/insertbtn"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:backgroundTint="@android:color/holo_orange_dark"
-    android:text="Insert User" />
+    <Button
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="Change Password" />
 
-<androidx.recyclerview.widget.RecyclerView
-    android:id="@+id/recyclerView"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="498dp" />
 </LinearLayout>

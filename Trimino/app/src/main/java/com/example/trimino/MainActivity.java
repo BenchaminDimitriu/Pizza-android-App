@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         if(player==null){
-            player = MediaPlayer.create(this,R.raw.music);
+            player = MediaPlayer.create(this,R.raw.song);
             player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                 @Override
                 public void onCompletion(MediaPlayer mediaPlayer) {
@@ -90,4 +90,6 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this,"MediaPlayer source is released", Toast.LENGTH_SHORT).show();
         }
     }
+
+
 }

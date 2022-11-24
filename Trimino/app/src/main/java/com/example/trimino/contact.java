@@ -8,14 +8,58 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class contact extends AppCompatActivity {
+
+    FloatingActionButton mHome, mFacebook, mTwit;
+    TextView fbText, twitText;
+
+    Boolean isAllfabsvisible;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact);
+
+        mHome = findViewById(R.id.homeFloatBtn);
+        mFacebook = findViewById(R.id.fbFloatBtn);
+        mTwit = findViewById(R.id.twitFloatBtn);
+
+        fbText = findViewById(R.id.fb);
+        twitText = findViewById(R.id.twitter);
+
+        mFacebook.setVisibility(View.GONE);
+        mTwit.setVisibility(View.GONE);
+        fbText.setVisibility(View.GONE);
+        twitText.setVisibility(View.GONE);
+
+        isAllfabsvisible = false;
+
+        mHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(!isAllfabsvisible){
+                    mFacebook.setVisibility(View.VISIBLE);
+                    mTwit.setVisibility(View.VISIBLE);
+                    fbText.setVisibility(View.VISIBLE);
+                    twitText.setVisibility(View.VISIBLE);
+                    isAllfabsvisible = true;
+                }else{
+                    mFacebook.setVisibility(View.GONE);
+                    mTwit.setVisibility(View.GONE);
+                    fbText.setVisibility(View.GONE);
+                    twitText.setVisibility(View.GONE);
+
+                    isAllfabsvisible = false;
+                }
+
+            }
+        });
     }
 
     @Override

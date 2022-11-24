@@ -17,12 +17,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.237"
+        android:onClick="startMusic"
         app:srcCompat="@drawable/ic_baseline_music_note_24" />
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="149dp"
         android:layout_height="146dp"
+        android:onClick="stopMusic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
