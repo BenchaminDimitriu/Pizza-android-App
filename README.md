@@ -19,12 +19,13 @@ Apply coupon code to total before delivery. (randomly generated)
 
 Have a progress bar. 
 
-GridLayout Pizza menu have pictures adjusted properly
-
+(RadioButton) might be only buttons if complexe for toppings -> toppings will be specified
 
 MEDIUM PRIORITY:
 
 Contact, make it redirect to email(maybe phone)
+
+GridLayout Pizza menu have pictures adjusted properly
 
 Location, make it connect to google maps 
 
