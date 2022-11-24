@@ -34,3 +34,4 @@ XML layouts for four pizzas
 
 Music wonky 
 
+Slider in the pizza details
