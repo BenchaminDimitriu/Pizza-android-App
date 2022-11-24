@@ -19,6 +19,9 @@ Apply coupon code to total before delivery. (randomly generated)
 
 Have a progress bar. 
 
+GridLayout Pizza menu have pictures adjusted properly
+
+
 MEDIUM PRIORITY:
 
 Contact, make it redirect to email(maybe phone)
