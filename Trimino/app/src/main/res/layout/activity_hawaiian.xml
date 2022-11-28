@@ -8,9 +8,9 @@
     tools:context=".hawaiian">
 
     <EditText
-        android:id="@+id/cheeseTotal2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/hawaiianTotal"
+        android:layout_width="151dp"
+        android:layout_height="51dp"
         android:ems="10"
         android:hint="Total"
         android:inputType="textPersonName"
@@ -20,6 +20,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.953" />
+
+    <Button
+        android:id="@+id/totalBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/black"
+        android:text="Total"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.634"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.948" />
+
+    <Button
+        android:id="@+id/orderBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/black"
+        android:text="Order"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.948" />
 
     <TextView
         android:id="@+id/smallToppingsPrice3"
@@ -36,7 +62,7 @@
         app:layout_constraintVertical_bias="0.336" />
 
     <CheckBox
-        android:id="@+id/olivesBox2"
+        android:id="@+id/olivesBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Olives"
@@ -49,7 +75,7 @@
         app:layout_constraintVertical_bias="0.327" />
 
     <CheckBox
-        android:id="@+id/onionsBox2"
+        android:id="@+id/onionsBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Onions"
@@ -76,7 +102,7 @@
         app:layout_constraintVertical_bias="0.669" />
 
     <CheckBox
-        android:id="@+id/peppersBox2"
+        android:id="@+id/peppersBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Peppers"
@@ -117,7 +143,7 @@
         app:layout_constraintVertical_bias="0.419" />
 
     <CheckBox
-        android:id="@+id/mushroomsBox2"
+        android:id="@+id/mushroomsBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mushrooms"
@@ -143,21 +169,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.251" />
 
-    <Button
-        android:id="@+id/cheeseOrderBtn2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/black"
-        android:text="Order"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.962"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.957" />
-
     <CheckBox
-        android:id="@+id/extraCheeseBox2"
+        android:id="@+id/extraCheeseBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Extra Cheese"
@@ -170,7 +183,7 @@
         app:layout_constraintVertical_bias="0.833" />
 
     <CheckBox
-        android:id="@+id/pineapplesBox2"
+        android:id="@+id/pineapplesBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Pineapples"
@@ -239,7 +252,7 @@
         app:layout_constraintVertical_bias="0.822" />
 
     <CheckBox
-        android:id="@+id/baconBitsBox2"
+        android:id="@+id/baconBitsBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Bacon Bits"
