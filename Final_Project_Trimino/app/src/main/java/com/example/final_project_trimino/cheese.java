@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -21,6 +22,7 @@ public class cheese extends AppCompatActivity {
     CheckBox olives, mushrooms, peppers, onions, bacons, pineapples, excheese, small, medium, large;;
     Button totalBtn, orderBtn;
     EditText total;
+    TextView cheese;
     int cost;
 
     FirebaseDatabase database;
@@ -35,6 +37,8 @@ public class cheese extends AppCompatActivity {
 
         reference = database.getInstance().getReference().child("Pizza");
         pizza = new Pizza();
+
+        cheese = findViewById(R.id.cheeseTxt);
 
         olives = findViewById(R.id.olivesBox);
         mushrooms = findViewById(R.id.mushroomsBox);
@@ -64,6 +68,10 @@ public class cheese extends AppCompatActivity {
         String t5 = "Bacon Bits";
         String t6 = "Pineapples";
         String t7 = "Extra Cheese";
+
+        String tp = "Type";
+
+        String c = "Total";
 
         reference.addValueEventListener(new ValueEventListener() {
             @Override
@@ -130,48 +138,69 @@ public class cheese extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                         if(olives.isChecked()){
+                            cost += 2;
                             pizza.setPizzaTopping1(t1);
                             reference.child(String.valueOf(i+1)).setValue(pizza);
                         } if(mushrooms.isChecked()){
-                            pizza.setPizzaTopping2(t2);
+                            cost += 4;
+                    pizza.setPizzaTopping2(t2);
                             reference.child(String.valueOf(i+1)).setValue(pizza);
                         } if(peppers.isChecked()){
+                            cost += 3;
                             pizza.setPizzaTopping3(t3);
                             reference.child(String.valueOf(i+1)).setValue(pizza);
                         } if(onions.isChecked()){
+                            cost += 2;
                             pizza.setPizzaTopping4(t4);
                             reference.child(String.valueOf(i+1)).setValue(pizza);
                         } if(bacons.isChecked()){
+                            cost += 4;
                             pizza.setPizzaTopping5(t5);
                             reference.child(String.valueOf(i+1)).setValue(pizza);
                         } if(pineapples.isChecked()){
+                            cost += 3;
                             pizza.setPizzaTopping6(t6);
                             reference.child(String.valueOf(i+1)).setValue(pizza);
                         } if(excheese.isChecked()){
+                            cost += 4;
                             pizza.setPizzaTopping7(t7);
                             reference.child(String.valueOf(i+1)).setValue(pizza);
                         } if(small.isChecked()){
+                            cost += 10;
                             pizza.setPizzaSmall(p1);
                             reference.child(String.valueOf(i+1)).setValue(pizza);
                         } if(medium.isChecked()){
+                            cost += 12;
                             pizza.setPizzaMedium(p2);
                             reference.child(String.valueOf(i+1)).setValue(pizza);
                         } if(large.isChecked()){
+                            cost += 14;
                             pizza.setPizzaLarge(p3);
                             reference.child(String.valueOf(i+1)).setValue(pizza);
                         } if (small.isChecked() && medium.isChecked()){
                             Toast.makeText(cheese.this, "Only one size can picked", Toast.LENGTH_SHORT).show();
+                            cost =0;
                         } if (small.isChecked() && large.isChecked()){
                             Toast.makeText(cheese.this, "Only one size can picked", Toast.LENGTH_SHORT).show();
+                            cost =0;
                         } if (medium.isChecked() && large.isChecked()){
                             Toast.makeText(cheese.this, "Only one size can picked", Toast.LENGTH_SHORT).show();
+                            cost =0;
                         } if (small.isChecked() && medium.isChecked()){
                             Toast.makeText(cheese.this, "Only one size can picked", Toast.LENGTH_SHORT).show();
+                            cost =0;
                         } if (medium.isChecked() && large.isChecked()){
                             Toast.makeText(cheese.this, "Only one size can picked", Toast.LENGTH_SHORT).show();
+                            cost =0;
                         } if (small.isChecked() && medium.isChecked() && large.isChecked()){
                             Toast.makeText(cheese.this, "Only one size can picked", Toast.LENGTH_SHORT).show();
+                            cost =0;
                         }
+                        pizza.setTotal((total.getText().toString().trim()));
+                        reference.child(String.valueOf(i+1)).setValue(pizza);
+
+                        pizza.setPizzaType((cheese.getText().toString().trim()));
+                        reference.child(String.valueOf(i+1)).setValue(pizza);
                     }
                 });
     }

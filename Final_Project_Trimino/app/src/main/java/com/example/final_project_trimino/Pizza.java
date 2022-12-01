@@ -1,6 +1,7 @@
 package com.example.final_project_trimino;
 
 public class Pizza {
+    private String pizzaType;
     private String pizzaSmall;
     private String pizzaMedium;
     private String pizzaLarge;
@@ -11,8 +12,18 @@ public class Pizza {
     private String pizzaTopping5;
     private String pizzaTopping6;
     private String pizzaTopping7;
+    private String total;
 
-    public Pizza(){}
+    public Pizza() {
+    }
+
+    public String getPizzaType() {
+        return pizzaType;
+    }
+
+    public void setPizzaType(String pizzaType) {
+        this.pizzaType = pizzaType;
+    }
 
     public String getPizzaSmall() {
         return pizzaSmall;
@@ -92,5 +103,13 @@ public class Pizza {
 
     public void setPizzaTopping7(String pizzaTopping7) {
         this.pizzaTopping7 = pizzaTopping7;
+    }
+
+    public String getTotal() {
+        return total;
+    }
+
+    public void setTotal(String total) {
+        this.total = total;
     }
 }
