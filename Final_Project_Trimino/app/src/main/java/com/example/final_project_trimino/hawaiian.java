@@ -7,11 +7,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.Toast;
 
 public class hawaiian extends AppCompatActivity {
 
 
-    CheckBox olives, mushrooms, peppers, onions, bacons, pineapples, excheese;
+    CheckBox olives, mushrooms, peppers, onions, bacons, pineapples, excheese, small, medium, large;
     Button totalBtn;
     EditText total;
     int cost;
@@ -28,6 +30,10 @@ public class hawaiian extends AppCompatActivity {
         bacons =  findViewById(R.id.baconBitsBox);
         pineapples = findViewById(R.id.pineapplesBox);
         excheese = findViewById(R.id.extraCheeseBox);
+
+        small = findViewById(R.id.smallPizza);
+        medium = findViewById(R.id.mediumPizza);
+        large = findViewById(R.id.largePizza);
 
         totalBtn = findViewById(R.id.totalBtn);
         total = findViewById(R.id.hawaiianTotal);
@@ -49,6 +55,30 @@ public class hawaiian extends AppCompatActivity {
                     cost += 3;
                 } if(excheese.isChecked()){
                     cost += 4;
+                } if(small.isChecked()){
+                    cost += 10;
+                } if(medium.isChecked()){
+                    cost += 12;
+                } if(large.isChecked()){
+                    cost += 14;
+                } if (small.isChecked() && medium.isChecked()){
+                    Toast.makeText(hawaiian.this, "Only one size can picked", Toast.LENGTH_SHORT).show();
+                    cost =0;
+                } if (small.isChecked() && large.isChecked()){
+                    Toast.makeText(hawaiian.this, "Only one size can picked", Toast.LENGTH_SHORT).show();
+                    cost =0;
+                } if (medium.isChecked() && large.isChecked()){
+                    Toast.makeText(hawaiian.this, "Only one size can picked", Toast.LENGTH_SHORT).show();
+                    cost =0;
+                } if (small.isChecked() && medium.isChecked()){
+                    Toast.makeText(hawaiian.this, "Only one size can picked", Toast.LENGTH_SHORT).show();
+                    cost =0;
+                } if (medium.isChecked() && large.isChecked()){
+                    Toast.makeText(hawaiian.this, "Only one size can picked", Toast.LENGTH_SHORT).show();
+                    cost =0;
+                } if (small.isChecked() && medium.isChecked() && large.isChecked()){
+                    Toast.makeText(hawaiian.this, "Only one size can picked", Toast.LENGTH_SHORT).show();
+                    cost =0;
                 }
                 total.setText("Total Price: $"+String.valueOf(cost));
                 cost =0;
