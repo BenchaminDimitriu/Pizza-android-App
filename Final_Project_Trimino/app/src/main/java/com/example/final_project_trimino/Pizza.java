@@ -1,11 +1,12 @@
 package com.example.final_project_trimino;
 
 public class Pizza {
-    private String pizzaType;
-    private String pizzaSmall;
-    private String pizzaMedium;
-    private String pizzaLarge;
-    private String pizzaXLarge;
+    private String pizzaBType;
+    private String pizzaASmall;
+    private String pizzaAMedium;
+    private String pizzaALarge;
+    private String pizzaAXLarge;
+
     private String pizzaTopping1;
     private String pizzaTopping2;
     private String pizzaTopping3;
@@ -18,44 +19,44 @@ public class Pizza {
     public Pizza() {
     }
 
-    public String getPizzaType() {
-        return pizzaType;
+    public String getPizzaBType() {
+        return pizzaBType;
     }
 
-    public void setPizzaType(String pizzaType) {
-        this.pizzaType = pizzaType;
+    public void setPizzaBType(String pizzaBType) {
+        this.pizzaBType = pizzaBType;
     }
 
-    public String getPizzaSmall() {
-        return pizzaSmall;
+    public String getPizzaASmall() {
+        return pizzaASmall;
     }
 
-    public void setPizzaSmall(String pizzaSmall) {
-        this.pizzaSmall = pizzaSmall;
+    public void setPizzaASmall(String pizzaASmall) {
+        this.pizzaASmall = pizzaASmall;
     }
 
-    public String getPizzaMedium() {
-        return pizzaMedium;
+    public String getPizzaAMedium() {
+        return pizzaAMedium;
     }
 
-    public void setPizzaMedium(String pizzaMedium) {
-        this.pizzaMedium = pizzaMedium;
+    public void setPizzaAMedium(String pizzaAMedium) {
+        this.pizzaAMedium = pizzaAMedium;
     }
 
-    public String getPizzaLarge() {
-        return pizzaLarge;
+    public String getPizzaALarge() {
+        return pizzaALarge;
     }
 
-    public void setPizzaLarge(String pizzaLarge) {
-        this.pizzaLarge = pizzaLarge;
+    public void setPizzaALarge(String pizzaALarge) {
+        this.pizzaALarge = pizzaALarge;
     }
 
-    public String getPizzaXLarge() {
-        return pizzaXLarge;
+    public String getPizzaAXLarge() {
+        return pizzaAXLarge;
     }
 
-    public void setPizzaXLarge(String pizzaXLarge) {
-        this.pizzaXLarge = pizzaXLarge;
+    public void setPizzaAXLarge(String pizzaAXLarge) {
+        this.pizzaAXLarge = pizzaAXLarge;
     }
 
     public String getPizzaTopping1() {

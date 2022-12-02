@@ -156,26 +156,26 @@ public class cheese extends AppCompatActivity {
                     reference.child(String.valueOf(i+1)).setValue(pizza);
                 } if(sizeSlider.getValue()==0){
                     cost += 6;
-                    pizza.setPizzaSmall(p1);
+                    pizza.setPizzaASmall(p1);
                     reference.child(String.valueOf(i+1)).setValue(pizza);
                 } if(sizeSlider.getValue()==1){
                     cost += 8;
-                    pizza.setPizzaMedium(p2);
+                    pizza.setPizzaAMedium(p2);
                     reference.child(String.valueOf(i+1)).setValue(pizza);
                 } if(sizeSlider.getValue()==2){
                     cost += 11;
-                    pizza.setPizzaLarge(p3);
+                    pizza.setPizzaALarge(p3);
                     reference.child(String.valueOf(i+1)).setValue(pizza);
                 } if(sizeSlider.getValue()==3){
                     cost += 14;
-                    pizza.setPizzaXLarge(p4);
+                    pizza.setPizzaAXLarge(p4);
                     reference.child(String.valueOf(i+1)).setValue(pizza);
                 }
                 total.setText("Total Price: $"+String.valueOf(cost));
                 pizza.setTotal((total.getText().toString().trim()));
                 reference.child(String.valueOf(i+1)).setValue(pizza);
 
-                pizza.setPizzaType((cheese.getText().toString().trim()));
+                pizza.setPizzaBType((cheese.getText().toString().trim()));
                 reference.child(String.valueOf(i+1)).setValue(pizza);
             }
         });
