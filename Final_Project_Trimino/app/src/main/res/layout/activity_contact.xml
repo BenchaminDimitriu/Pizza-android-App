@@ -8,13 +8,14 @@
     tools:context=".ContactActivity">
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/mailTxtView"
         android:layout_width="331dp"
         android:layout_height="34dp"
         android:text="trimino@gmail.com"
         android:textAlignment="center"
         android:textColor="@color/purple_700"
         android:textSize="25dp"
+        android:autoLink="email"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,10 +50,11 @@
         app:layout_constraintVertical_bias="0.219" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/phoneTxtView"
         android:layout_width="331dp"
         android:layout_height="34dp"
         android:text="514-123-4567"
+        android:autoLink="phone"
         android:textAlignment="center"
         android:textColor="@color/purple_700"
         android:textSize="25dp"

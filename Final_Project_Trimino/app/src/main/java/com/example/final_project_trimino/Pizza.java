@@ -5,6 +5,7 @@ public class Pizza {
     private String pizzaSmall;
     private String pizzaMedium;
     private String pizzaLarge;
+    private String pizzaXLarge;
     private String pizzaTopping1;
     private String pizzaTopping2;
     private String pizzaTopping3;
@@ -47,6 +48,14 @@ public class Pizza {
 
     public void setPizzaLarge(String pizzaLarge) {
         this.pizzaLarge = pizzaLarge;
+    }
+
+    public String getPizzaXLarge() {
+        return pizzaXLarge;
+    }
+
+    public void setPizzaXLarge(String pizzaXLarge) {
+        this.pizzaXLarge = pizzaXLarge;
     }
 
     public String getPizzaTopping1() {
