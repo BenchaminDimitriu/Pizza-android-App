@@ -1,0 +1,258 @@
+[
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\drawable_ic_baseline_shopping_cart_24.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\drawable\\ic_baseline_shopping_cart_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\drawable_mexicanpizza.png.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\drawable\\mexicanpizza.png"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\layout_activity_registration.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\layout\\activity_registration.xml"
+    },
+    {
+        "merged": "com.example.trimino.app-merged_res-35:/layout_activity_checkout.xml.flat",
+        "source": "com.example.trimino.app-main-37:/layout/activity_checkout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\layout_activity_profile.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\drawable_pepperoni_pizza.png.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\drawable\\pepperoni_pizza.png"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\raw_song.mp3.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\raw\\song.mp3"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\drawable_ic_baseline_music_note_24.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\drawable\\ic_baseline_music_note_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\drawable_logo.png.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\drawable\\logo.png"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-pngs-30:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\layout_activity_location.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\layout\\activity_location.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\layout_row_child_cart.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\layout\\row_child_cart.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\drawable_ic_baseline_contact_phone_24.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\drawable\\ic_baseline_contact_phone_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\drawable_ic_baseline_person_add_24.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\drawable\\ic_baseline_person_add_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\layout_activity_coupons.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\layout\\activity_coupons.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\layout_activity_hawaiian.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\layout\\activity_hawaiian.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\layout_row_child_profile.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\layout\\row_child_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\drawable_cheesepizza.png.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\drawable\\cheesepizza.png"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\drawable_ic_baseline_menu_book_24.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\drawable\\ic_baseline_menu_book_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\layout_activity_pepperoni.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\layout\\activity_pepperoni.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\layout_activity_cheese.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\layout\\activity_cheese.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\drawable_ic_baseline_auto_awesome_24.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\drawable\\ic_baseline_auto_awesome_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\layout_activity_music_controller.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\layout\\activity_music_controller.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\drawable_ic_baseline_music_off_24.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\drawable\\ic_baseline_music_off_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\layout_activity_mexican.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\layout\\activity_mexican.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\drawable_ic_baseline_no_accounts_24.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\drawable\\ic_baseline_no_accounts_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\raw_music.mp3.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\raw\\music.mp3"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\drawable_hawaiian_pizza.png.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\drawable\\hawaiian_pizza.png"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\drawable_ic_baseline_percent_24.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\drawable\\ic_baseline_percent_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\layout_activity_contact.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\layout\\activity_contact.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\layout_activity_menu.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\layout\\activity_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\drawable_ic_baseline_local_pizza_24.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\drawable\\ic_baseline_local_pizza_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\drawable_regis.png.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\drawable\\regis.png"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\drawable_ic_baseline_phone_android_24.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\drawable\\ic_baseline_phone_android_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\drawable_ic_baseline_account_circle_24.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\drawable\\ic_baseline_account_circle_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\drawable_veg.png.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\drawable\\veg.png"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\layout_activity_cart.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\layout\\activity_cart.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\menu_main_menu.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\menu\\main_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\drawable_ic_baseline_person_24.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\drawable\\ic_baseline_person_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\drawable_ic_baseline_location_on_24.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\drawable\\ic_baseline_location_on_24.xml"
+    },
+    {
+        "merged": "com.example.trimino.app-merged_res-35:/layout_activity_cheese.xml.flat",
+        "source": "com.example.trimino.app-main-37:/layout/activity_cheese.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\menu_second_menu.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\menu\\second_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\layout_activity_order.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\layout\\activity_order.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\layout_row_child_coupon.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\layout\\row_child_coupon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\drawable_ic_baseline_home_24.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\drawable\\ic_baseline_home_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-merged_res-35:\\layout_activity_checkout.xml.flat",
+        "source": "C:\\Users\\Ea_Em\\.gradle\\daemon\\7.3.3\\com.example.trimino.app-main-37:\\layout\\activity_checkout.xml"
+    },
+    {
+        "merged": "com.example.trimino.app-merged_res-35:/layout_cart_row_child.xml.flat",
+        "source": "com.example.trimino.app-main-37:/layout/cart_row_child.xml"
+    }
+]
