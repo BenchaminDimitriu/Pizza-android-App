@@ -28,7 +28,7 @@ public class MusicPlayer {
         if(mediaPlayer != null){
             mediaPlayer.release();
             mediaPlayer = null;
-            Toast.makeText(c,"MediaPlayer source is released", Toast.LENGTH_SHORT).show();
+            Toast.makeText(c,"Muted", Toast.LENGTH_SHORT).show();
         }
     }
 }

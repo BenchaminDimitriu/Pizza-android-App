@@ -90,7 +90,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                                 // in else condition we are displaying a failure toast message.
                                 loadingPB.setVisibility(View.GONE);
-                                Toast.makeText(RegisterActivity.this, "Fail to register user..", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(RegisterActivity.this, "Fail to register user. Password must be at least 8 characters long.", Toast.LENGTH_SHORT).show();
                             }
                         }
                     });

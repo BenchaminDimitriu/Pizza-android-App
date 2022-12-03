@@ -49,6 +49,9 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
     implementation 'com.firebaseui:firebase-ui-database:8.0.2'
     implementation "androidx.recyclerview:recyclerview:1.2.1"
+
+    implementation 'com.orhanobut:dialogplus:1.11@aar'
+
 }
 //
 apply plugin: 'com.google.gms.google-services'

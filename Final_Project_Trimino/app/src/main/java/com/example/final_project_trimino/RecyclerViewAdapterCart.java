@@ -1,10 +1,15 @@
 package com.example.final_project_trimino;
 
 
+import android.annotation.SuppressLint;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -12,6 +17,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.Objects;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -28,7 +36,7 @@ public class RecyclerViewAdapterCart extends FirebaseRecyclerAdapter<Pizza,Recyc
     }
 
     @Override
-    protected void onBindViewHolder(@NonNull myViewHolder holder, int position, @NonNull Pizza model) {
+    protected void onBindViewHolder(@NonNull myViewHolder holder, @SuppressLint("RecyclerView") int position, @NonNull Pizza model) {
         holder.top1.setText(model.getPizzaTopping1());
         holder.top2.setText(model.getPizzaTopping2());
         holder.top3.setText(model.getPizzaTopping3());
@@ -45,6 +53,32 @@ public class RecyclerViewAdapterCart extends FirebaseRecyclerAdapter<Pizza,Recyc
         holder.type.setText(model.getPizzaBType());
         holder.total.setText(model.getTotal());
 
+        holder.deleteBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(holder.type.getContext());
+                builder.setTitle("Are you sure?");
+                builder.setMessage("Pizza will be deleted");
+
+                builder.setPositiveButton("Delete", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        FirebaseDatabase.getInstance().getReference().child("Pizza")
+                                .child(Objects.requireNonNull(getRef(position).getKey())).removeValue();
+                        Toast.makeText(holder.type.getContext(), "Deleted", Toast.LENGTH_SHORT).show();
+                    }
+                });
+
+                builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Toast.makeText(holder.type.getContext(), "Cancelled", Toast.LENGTH_SHORT).show();
+                    }
+                });
+                builder.show();
+            }
+        });
+
     }
 
     @NonNull
@@ -58,6 +92,7 @@ public class RecyclerViewAdapterCart extends FirebaseRecyclerAdapter<Pizza,Recyc
 
         CircleImageView img;
         TextView sizeS, sizeM, sizeL, sizeXL, type, top1, top2, top3, top4, top5, top6 ,top7, total;
+        Button deleteBtn;
 
         public myViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -76,6 +111,8 @@ public class RecyclerViewAdapterCart extends FirebaseRecyclerAdapter<Pizza,Recyc
             top6 = (TextView) itemView.findViewById(R.id.pizzaTopTxt6);
             top7 = (TextView) itemView.findViewById(R.id.pizzaTopTxt7);
             total = (TextView) itemView.findViewById(R.id.pizzaTotalTxt);
+
+            deleteBtn = (Button) itemView.findViewById(R.id.deleteBtn);
 
         }
     }
