@@ -15,6 +15,8 @@ Must redirect to cart as a recycler view using firebase to save to a cart table.
 
 CHECKOUT
 
+Delete pizza from db
+
 Apply coupon code to total before delivery. (randomly generated)
 
 Have a progress bar. 
