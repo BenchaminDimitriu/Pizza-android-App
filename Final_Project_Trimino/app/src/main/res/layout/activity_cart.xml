@@ -70,7 +70,7 @@
         app:layout_constraintVertical_bias="0.623" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView2"
+        android:id="@+id/rvCart"
         android:layout_width="410dp"
         android:layout_height="391dp"
         android:layout_marginStart="1dp"
@@ -100,9 +100,10 @@
         android:id="@+id/imageView7"
         android:layout_width="118dp"
         android:layout_height="100dp"
+        android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.208"
+        app:layout_constraintHorizontal_bias="0.201"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/recyclerView2"
         app:layout_constraintVertical_bias="0.934"

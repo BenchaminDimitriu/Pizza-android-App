@@ -3,6 +3,7 @@ package com.example.final_project_trimino;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -176,6 +177,9 @@ public class hawaiian extends AppCompatActivity {
 
                 pizza.setPizzaBType((hawaiian.getText().toString().trim()));
                 reference.child(String.valueOf(i+1)).setValue(pizza);
+
+                Intent i = new Intent(hawaiian.this, CartActivity.class);
+                startActivity(i);
             }
         });
     }

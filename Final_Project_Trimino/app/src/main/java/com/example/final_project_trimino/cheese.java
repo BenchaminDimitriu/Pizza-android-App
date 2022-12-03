@@ -3,6 +3,7 @@ package com.example.final_project_trimino;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -177,6 +178,9 @@ public class cheese extends AppCompatActivity {
 
                 pizza.setPizzaBType((cheese.getText().toString().trim()));
                 reference.child(String.valueOf(i+1)).setValue(pizza);
+
+                Intent i = new Intent(cheese.this, CartActivity.class);
+                startActivity(i);
             }
         });
     }
