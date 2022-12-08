@@ -25,20 +25,20 @@ public class CouponActivity extends AppCompatActivity {
         setContentView(R.layout.activity_coupon);
 
         ArrayList<String> codes = new ArrayList<>();
-        codes.add("Coupon code: ");
-        codes.add("Coupon code: ");
-        codes.add("Coupon code: ");
-        codes.add("Coupon code: ");
-        codes.add("Coupon code: ");
-        codes.add("Coupon code: ");
+        codes.add("Coupon code: " + "Qts98");
+        codes.add("Coupon code: " + "e59lR");
+        codes.add("Coupon code: " + "bM3BX");
+        codes.add("Coupon code: " + "OFxvT");
+        codes.add("Coupon code: " + "cJj0E");
+        codes.add("Coupon code: " + "rFZnI");
 
         ArrayList<String> title = new ArrayList<>();
-        title.add("Get 1 10’ pizza for 10$");
-        title.add("Get 10% off all toppings");
-        title.add("Get 20% off all toppings");
-        title.add("Get 1 12’ pizza for 12$");
-        title.add("Get 1 18’ pizza for 14$");
-        title.add("Get 1 18’ pizza for 14$");
+        title.add("Saturday Sale");
+        title.add("Monthly Sale");
+        title.add("Top(ping) hat sale Only");
+        title.add("Cheesy Sale");
+        title.add("Free Medium Size Pizza");
+        title.add("Veggie Topping Sale");
 
         ArrayList<String> time = new ArrayList<>();
         time.add("Online only");
@@ -49,12 +49,12 @@ public class CouponActivity extends AppCompatActivity {
         time.add("Online only");
 
         ArrayList<String> description = new ArrayList<>();
-        description.add("Save 2$ off a small pizza");
-        description.add("Save 10% on all your toppings");
-        description.add("Save 20% on all your toppings");
-        description.add("Save 2$ off a medium pizza");
-        description.add("Save 2$ off a large pizza");
-        description.add("Save 2$ off a large pizza");
+        description.add("Save 2$ off from toppings");
+        description.add("Save 5$ off topping when buying more than one pizza");
+        description.add("Save 4$ off the small pizza");
+        description.add("Save money of the extra cheese topping");
+        description.add("Free medium size pizza (require 3 toppings)");
+        description.add("Save 5$ off vegetables topping pizza (require vegetable toppings)");
 
 
 
