@@ -24,13 +24,13 @@
 
     <TextView
         android:id="@+id/couponcodetxt"
-        android:layout_width="136dp"
-        android:layout_height="31dp"
+        android:layout_width="93dp"
+        android:layout_height="28dp"
         android:fontFamily="serif"
         android:text="Code"
-        android:textStyle="bold"
         android:textColor="@android:color/white"
         android:textSize="25dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.058"
@@ -55,19 +55,19 @@
         app:layout_constraintVertical_bias="0.729" />
 
     <EditText
-        android:id="@+id/couponID"
-        android:layout_width="205dp"
-        android:layout_height="29dp"
+        android:id="@+id/couponET"
+        android:layout_width="151dp"
+        android:layout_height="31dp"
         android:background="@color/white"
         android:ems="10"
         android:hint="Coupon Code"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintHorizontal_bias="0.538"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.623" />
+        app:layout_constraintVertical_bias="0.628" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvCart"
@@ -105,8 +105,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.201"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/recyclerView2"
         app:layout_constraintVertical_bias="0.934"
         app:srcCompat="@drawable/img_2" />
+
+    <Button
+        android:id="@+id/applyBtn"
+        android:layout_width="100dp"
+        android:layout_height="57dp"
+        android:text="Apply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.633" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

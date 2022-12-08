@@ -20,7 +20,7 @@
         <entry key="..\:/Users/Ea_Em/AndroidStudioProjects/Final_Project_Trimino/app/src/main/res/drawable/ic_baseline_phone_android_24.xml" value="0.2095" />
         <entry key="..\:/Users/Ea_Em/AndroidStudioProjects/Final_Project_Trimino/app/src/main/res/drawable/ic_baseline_shopping_cart_24.xml" value="0.2095" />
         <entry key="..\:/Users/Ea_Em/AndroidStudioProjects/Final_Project_Trimino/app/src/main/res/drawable/progress_back.xml" value="0.1" />
-        <entry key="..\:/Users/Ea_Em/AndroidStudioProjects/Final_Project_Trimino/app/src/main/res/layout/activity_cart.xml" value="0.25" />
+        <entry key="..\:/Users/Ea_Em/AndroidStudioProjects/Final_Project_Trimino/app/src/main/res/layout/activity_cart.xml" value="0.536" />
         <entry key="..\:/Users/Ea_Em/AndroidStudioProjects/Final_Project_Trimino/app/src/main/res/layout/activity_checkout.xml" value="0.25" />
         <entry key="..\:/Users/Ea_Em/AndroidStudioProjects/Final_Project_Trimino/app/src/main/res/layout/activity_cheese.xml" value="0.25" />
         <entry key="..\:/Users/Ea_Em/AndroidStudioProjects/Final_Project_Trimino/app/src/main/res/layout/activity_contact.xml" value="0.25" />
@@ -34,6 +34,7 @@
         <entry key="..\:/Users/Ea_Em/AndroidStudioProjects/Final_Project_Trimino/app/src/main/res/layout/activity_music.xml" value="0.25" />
         <entry key="..\:/Users/Ea_Em/AndroidStudioProjects/Final_Project_Trimino/app/src/main/res/layout/activity_pepperoni.xml" value="0.25" />
         <entry key="..\:/Users/Ea_Em/AndroidStudioProjects/Final_Project_Trimino/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Users/Ea_Em/AndroidStudioProjects/Final_Project_Trimino/app/src/main/res/layout/row_child_cart.xml" value="0.25" />
         <entry key="..\:/Users/Ea_Em/AndroidStudioProjects/Final_Project_Trimino/app/src/main/res/layout/row_child_coupon.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/Ea_Em/AndroidStudioProjects/Final_Project_Trimino/app/src/main/res/menu/second_menu.xml" value="0.25" />
         <entry key="..\:/Users/Ea_Em/Desktop/App_Dev_Project-main/App_Dev_Project-main/Final_Project_Trimino/app/src/main/res/layout/activity_cart.xml" value="0.24635416666666668" />

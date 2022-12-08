@@ -175,8 +175,8 @@ public class pepperoni extends AppCompatActivity {
                     pizza.setPizzaAXLarge(p4);
                     reference.child(String.valueOf(i+1)).setValue(pizza);
                 }
-                total.setText("Total Price: $"+String.valueOf(cost));
-                pizza.setTotal((total.getText().toString().trim()));
+                total.setText(String.valueOf(cost));
+                pizza.setTotal(Integer.parseInt((total.getText().toString().trim())));
                 reference.child(String.valueOf(i+1)).setValue(pizza);
 
                 pizza.setPizzaBType((pepperoni.getText().toString().trim()));

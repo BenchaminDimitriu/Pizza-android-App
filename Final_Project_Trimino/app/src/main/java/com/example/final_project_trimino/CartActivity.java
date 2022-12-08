@@ -7,21 +7,31 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class CartActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
     RecyclerViewAdapterCart recyclerViewAdapterCart;
-    Button checkout;
+    Button checkout, apply;
+    TextView totalCheckout;
+    EditText coupon;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,10 +39,17 @@ public class CartActivity extends AppCompatActivity {
         setContentView(R.layout.activity_cart);
 
         checkout = findViewById(R.id.checkoutBtn);
+        apply = findViewById(R.id.applyBtn);
+
+        coupon = findViewById(R.id.couponET);
+
+        totalCheckout = findViewById(R.id.cartamount);
 
         recyclerView = findViewById(R.id.rvCart);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
+
+        //View
         FirebaseRecyclerOptions<Pizza> options =
                 new FirebaseRecyclerOptions.Builder<Pizza>()
                         .setQuery(FirebaseDatabase.getInstance().getReference().child("Pizza"), Pizza.class)
@@ -40,6 +57,49 @@ public class CartActivity extends AppCompatActivity {
 
         recyclerViewAdapterCart = new RecyclerViewAdapterCart(options);
         recyclerView.setAdapter(recyclerViewAdapterCart);
+
+        //totalCheckout.setText(options.toString());
+
+        //get total of all pizzas
+        DatabaseReference rootRef = FirebaseDatabase.getInstance().getReference();
+        DatabaseReference rowRef = rootRef.child("Pizza").child("total");
+
+
+        rowRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                Object value = dataSnapshot.getValue();
+                totalCheckout.setText(value.toString());
+
+                // whenever data at this location is updated.
+                //Object value = dataSnapshot.getValue();
+
+                // Calculate the total of the values in the row.
+//                int total = 0;
+//                for (DataSnapshot childSnapshot : dataSnapshot.getChildren()) {
+//                    double childValue = childSnapshot.getValue(Integer.class);
+//                    total += childValue;
+//                }
+//                totalCheckout.setText((int) total);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError error) {
+                // Failed to read value
+                Log.w("TAG", "Failed to read value.", error.toException());
+            }
+        });
+
+        apply.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(coupon.getText().toString() == "213"){
+                    int amount = 0;
+                    amount -= 5;
+                    totalCheckout.setText(amount);
+                }
+            }
+        });
 
         checkout.setOnClickListener(new View.OnClickListener() {
             @Override
