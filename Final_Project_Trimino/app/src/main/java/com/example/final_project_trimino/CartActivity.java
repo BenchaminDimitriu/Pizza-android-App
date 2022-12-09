@@ -58,48 +58,24 @@ public class CartActivity extends AppCompatActivity {
         recyclerViewAdapterCart = new RecyclerViewAdapterCart(options);
         recyclerView.setAdapter(recyclerViewAdapterCart);
 
-        //totalCheckout.setText(options.toString());
+        FirebaseDatabase.getInstance().getReference().child("Pizza")
+                .addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                            Pizza pizza = snapshot.getValue(Pizza.class);
+                            System.out.println(pizza.getTotal());
 
-//        //get total of all pizzas
-//        DatabaseReference rootRef = FirebaseDatabase.getInstance().getReference();
-//        DatabaseReference rowRef = rootRef.child("Pizza").child("total");
-//
-//
-//        rowRef.addListenerForSingleValueEvent(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(DataSnapshot dataSnapshot) {
-//                Object value = dataSnapshot.getValue();
-//                //totalCheckout.setText(value.toString());
-//
-//                // whenever data at this location is updated.
-//                //Object value = dataSnapshot.getValue();
-//
-//                // Calculate the total of the values in the row.
-////                int total = 0;
-////                for (DataSnapshot childSnapshot : dataSnapshot.getChildren()) {
-////                    double childValue = childSnapshot.getValue(Integer.class);
-////                    total += childValue;
-////                }
-////                totalCheckout.setText((int) total);
-//            }
-//
-//            @Override
-//            public void onCancelled(DatabaseError error) {
-//                // Failed to read value
-//                Log.w("TAG", "Failed to read value.", error.toException());
-//            }
-//        });
-
-//        apply.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                if(coupon.getText().toString() == "213"){
-//                    int amount = 0;
-//                    amount -= 5;
-//                    totalCheckout.setText(amount);
-//                }
-//            }
-//        });
+//                            Integer amount = pizza.getTotal();
+//                            totalCheckout.setText(amount.toString() + "$");
+                            //Add loop here somehow
+                            totalCheckout.setText(pizza.getTotal() + pizza.getTotal() + "$");
+                        }
+                    }
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+                    }
+                });
 
         checkout.setOnClickListener(new View.OnClickListener() {
             @Override
