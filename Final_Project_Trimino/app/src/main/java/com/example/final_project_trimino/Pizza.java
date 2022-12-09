@@ -14,7 +14,7 @@ public class Pizza {
     private String pizzaTopping5;
     private String pizzaTopping6;
     private String pizzaTopping7;
-    private String total;
+    private int total;
 
     public Pizza() {
     }
@@ -115,11 +115,9 @@ public class Pizza {
         this.pizzaTopping7 = pizzaTopping7;
     }
 
-    public String getTotal() {
-        return total;
-    }
-
-    public void setTotal(String total) {
+    public void setTotal(int total) {
         this.total = total;
     }
+
+    public int getTotal() {return total;}
 }

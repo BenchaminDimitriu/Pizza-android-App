@@ -51,7 +51,9 @@ public class RecyclerViewAdapterCart extends FirebaseRecyclerAdapter<Pizza,Recyc
         holder.sizeXL.setText(model.getPizzaAXLarge());
 
         holder.type.setText(model.getPizzaBType());
-        holder.total.setText(model.getTotal());
+
+        holder.total.setText(model.getTotal()+"");
+        //holder.total.setText(model.getTotal());
 
         holder.deleteBtn.setOnClickListener(new View.OnClickListener() {
             @Override
