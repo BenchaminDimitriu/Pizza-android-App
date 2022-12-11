@@ -60,15 +60,43 @@ public class CartActivity extends AppCompatActivity {
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
-                        int sum = 0;
+                        final int[] sum = {0};
                         for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                             Pizza pizza = snapshot.getValue(Pizza.class);
                             System.out.println(pizza.getTotal());
-                            sum += pizza.getTotal();
-//                            Integer amount = pizza.getTotal();
-//                            totalCheckout.setText(amount.toString() + "$");
-                            //Add loop here somehow
-                            totalCheckout.setText(sum + "$");
+                            sum[0] += pizza.getTotal();
+
+                            totalCheckout.setText(sum[0] + "$");
+
+                            apply.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+                                    if(coupon.getText().toString().equals("001")){
+                                        sum[0] = sum[0] -2;
+                                        totalCheckout.setText(sum[0] + "$");
+                                    }
+                                    if(coupon.getText().toString().equals("002")){
+                                        sum[0] = sum[0] -2;
+                                        totalCheckout.setText(sum[0] + "$");
+                                    }
+                                    if(coupon.getText().toString().equals("003")){
+                                        sum[0] = sum[0] -2;
+                                        totalCheckout.setText(sum[0] + "$");
+                                    }
+                                    if(coupon.getText().toString().equals("004")){
+                                        sum[0] = sum[0] -2;
+                                        totalCheckout.setText(sum[0] + "$");
+                                    }
+                                    if(coupon.getText().toString().equals("005")){
+                                        sum[0] = sum[0] -2;
+                                        totalCheckout.setText(sum[0] + "$");
+                                    }
+                                    if(coupon.getText().toString().equals("006")){
+                                        sum[0] = sum[0] -2;
+                                        totalCheckout.setText(sum[0] + "$");
+                                    }
+                                }
+                            });
                         }
                     }
                     @Override
@@ -83,7 +111,17 @@ public class CartActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+//        apply.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                if(coupon.getText().toString().equals("123")){
+//                    totalCheckout.getText();
+//                }
+//            }
+//        });
     }
+
 
     @Override
     protected void onStart() {
@@ -113,11 +151,6 @@ public class CartActivity extends AppCompatActivity {
                 Intent k = new Intent(CartActivity.this, MainActivity.class);
                 startActivity(k);
                 return true;
-//            case R.id.profile:
-//                Toast.makeText(this, "Profile is selected", Toast.LENGTH_SHORT).show();
-//                Intent i = new Intent(MenuActivity.this, ProfileActivity.class);
-//                startActivity(i);
-//                return true;
             case R.id.menu:
                 Toast.makeText(this, "Menu is selected", Toast.LENGTH_SHORT).show();
                 Intent l = new Intent(CartActivity.this, MenuActivity.class);
@@ -138,11 +171,6 @@ public class CartActivity extends AppCompatActivity {
                 Intent b = new Intent(CartActivity.this, ContactActivity.class);
                 startActivity(b);
                 return true;
-//            case R.id.cart:
-//                Toast.makeText(this, "Cart is selected", Toast.LENGTH_SHORT).show();
-//                Intent c = new Intent(CartActivity.this, CartActivity.class);
-//                startActivity(c);
-//                return true;
             case R.id.music:
                 Toast.makeText(this, "Music is selected", Toast.LENGTH_SHORT).show();
                 Intent f = new Intent(CartActivity.this, MusicActivity.class);
