@@ -101,30 +101,36 @@ public class CartActivity extends AppCompatActivity {
                                         //if()
                                         sum[0] = sum[0] - 3;
                                         totalCheckout.setText(sum[0] + "$");
+                                        apply.setEnabled(false);
                                     }
                                     if(coupon.getText().toString().equals("p3C0J")){
                                         sum[0] = (int) (sum[0] - (sum[0] * 0.05 / 100) );
                                         totalCheckout.setText(sum[0] + "$");
+                                        apply.setEnabled(false);
                                     }
                                     if(coupon.getText().toString().equals("K85zK")){
                                         //if()
                                         sum[0] = sum[0] - 4;
                                         totalCheckout.setText(sum[0] + "$");
+                                        apply.setEnabled(false);
                                     }
                                     if(coupon.getText().toString().equals("77AMl")){
                                         //if()
                                         sum[0] = sum[0] -3;
                                         totalCheckout.setText(sum[0] + "$");
+                                        apply.setEnabled(false);
                                     }
                                     if(coupon.getText().toString().equals("sclQI")){
                                         //if()
                                         sum[0] = sum[0] -2;
                                         totalCheckout.setText(sum[0] + "$");
+                                        apply.setEnabled(false);
                                     }
                                     if(coupon.getText().toString().equals("r6k9a")){
                                         //if()
                                         sum[0] = sum[0] -3;
                                         totalCheckout.setText(sum[0] + "$");
+                                        apply.setEnabled(false);
                                     }
                                 }
                             });
