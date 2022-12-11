@@ -1,16 +1,16 @@
 package com.example.final_project_trimino;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
@@ -25,20 +25,20 @@ public class CouponActivity extends AppCompatActivity {
         setContentView(R.layout.activity_coupon);
 
         ArrayList<String> codes = new ArrayList<>();
-        codes.add("Coupon code: ");
-        codes.add("Coupon code: ");
-        codes.add("Coupon code: ");
-        codes.add("Coupon code: ");
-        codes.add("Coupon code: ");
-        codes.add("Coupon code: ");
+        codes.add("Coupon code: " + "co2aQ");
+        codes.add("Coupon code: "+ "p3C0J");
+        codes.add("Coupon code: "+ "K85zK");
+        codes.add("Coupon code: "+ "77AMl");
+        codes.add("Coupon code: "+ "sclQI");
+        codes.add("Coupon code: "+ "r6k9a");
 
         ArrayList<String> title = new ArrayList<>();
-        title.add("Get 1 10’ pizza for 10$");
-        title.add("Get 10% off all toppings");
-        title.add("Get 20% off all toppings");
-        title.add("Get 1 12’ pizza for 12$");
-        title.add("Get 1 18’ pizza for 14$");
-        title.add("Get 1 18’ pizza for 14$");
+        title.add("Kidz sale!");
+        title.add("Christmas Sale!");
+        title.add("Green Sale");
+        title.add("Cheezy Sale");
+        title.add("Carnivore Sale");
+        title.add("Big pizza -> Smol sale");
 
         ArrayList<String> time = new ArrayList<>();
         time.add("Online only");
@@ -49,12 +49,12 @@ public class CouponActivity extends AppCompatActivity {
         time.add("Online only");
 
         ArrayList<String> description = new ArrayList<>();
-        description.add("Save 2$ off a small pizza");
-        description.add("Save 10% on all your toppings");
-        description.add("Save 20% on all your toppings");
-        description.add("Save 2$ off a medium pizza");
-        description.add("Save 2$ off a large pizza");
-        description.add("Save 2$ off a large pizza");
+        description.add("Save 3$ off a small pizza");
+        description.add("Save 5% off your total purchase");
+        description.add("Save 4$ on all vegetables toppings");
+        description.add("Save 3$ off extra cheese topping");
+        description.add("Save 2$ off a meat topping");
+        description.add("Save 3$ off a large pizza");
 
 
 

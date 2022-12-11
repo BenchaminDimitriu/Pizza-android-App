@@ -7,6 +7,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -17,6 +18,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.android.material.slider.Slider;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
@@ -30,6 +32,15 @@ public class CartActivity extends AppCompatActivity {
     TextView totalCheckout;
     EditText coupon;
 
+    //per each pizza (cheese,hawaiian, mexican, etc..) needs an intent after each item checked and slider's value.
+
+    //MOST LIKELY an INTENT
+    //getintent()
+    //Probably the putextra. thing
+
+    Slider sizeSlider;
+    CheckBox olives, mushrooms, peppers, onions, bacons, pineapples, excheese;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +49,19 @@ public class CartActivity extends AppCompatActivity {
 
         checkout = findViewById(R.id.checkoutBtn);
         apply = findViewById(R.id.applyBtn);
+
+/*        sizeSlider = findViewById(R.id.slider);
+        olives = findViewById(R.id.olivesBox);
+        mushrooms = findViewById(R.id.mushroomsBox);
+        peppers = findViewById(R.id.peppersBox);
+        onions = findViewById(R.id.onionsBox);
+        bacons =  findViewById(R.id.baconBitsBox);
+        pineapples = findViewById(R.id.pineapplesBox);
+        excheese = findViewById(R.id.extraCheeseBox);
+        */
+
+
+
 
         coupon = findViewById(R.id.couponET);
 
@@ -71,28 +95,35 @@ public class CartActivity extends AppCompatActivity {
                             apply.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View view) {
-                                    if(coupon.getText().toString().equals("001")){
+                                    // TODO: need to make it only 1 use
+                                    // TODO: need to find a the correct check to apply coupon
+                                    if(coupon.getText().toString().equals("co2aQ")){
+                                        //if()
+                                        sum[0] = sum[0] - 3;
+                                        totalCheckout.setText(sum[0] + "$");
+                                    }
+                                    if(coupon.getText().toString().equals("p3C0J")){
+                                        sum[0] = (int) (sum[0] - (sum[0] * 0.05 / 100) );
+                                        totalCheckout.setText(sum[0] + "$");
+                                    }
+                                    if(coupon.getText().toString().equals("K85zK")){
+                                        //if()
+                                        sum[0] = sum[0] - 4;
+                                        totalCheckout.setText(sum[0] + "$");
+                                    }
+                                    if(coupon.getText().toString().equals("77AMl")){
+                                        //if()
+                                        sum[0] = sum[0] -3;
+                                        totalCheckout.setText(sum[0] + "$");
+                                    }
+                                    if(coupon.getText().toString().equals("sclQI")){
+                                        //if()
                                         sum[0] = sum[0] -2;
                                         totalCheckout.setText(sum[0] + "$");
                                     }
-                                    if(coupon.getText().toString().equals("002")){
-                                        sum[0] = sum[0] -2;
-                                        totalCheckout.setText(sum[0] + "$");
-                                    }
-                                    if(coupon.getText().toString().equals("003")){
-                                        sum[0] = sum[0] -2;
-                                        totalCheckout.setText(sum[0] + "$");
-                                    }
-                                    if(coupon.getText().toString().equals("004")){
-                                        sum[0] = sum[0] -2;
-                                        totalCheckout.setText(sum[0] + "$");
-                                    }
-                                    if(coupon.getText().toString().equals("005")){
-                                        sum[0] = sum[0] -2;
-                                        totalCheckout.setText(sum[0] + "$");
-                                    }
-                                    if(coupon.getText().toString().equals("006")){
-                                        sum[0] = sum[0] -2;
+                                    if(coupon.getText().toString().equals("r6k9a")){
+                                        //if()
+                                        sum[0] = sum[0] -3;
                                         totalCheckout.setText(sum[0] + "$");
                                     }
                                 }
@@ -111,15 +142,6 @@ public class CartActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
-
-//        apply.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                if(coupon.getText().toString().equals("123")){
-//                    totalCheckout.getText();
-//                }
-//            }
-//        });
     }
 
 
